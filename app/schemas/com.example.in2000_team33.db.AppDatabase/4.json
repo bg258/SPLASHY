@@ -1,0 +1,100 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 4,
+    "identityHash": "e1bd3e51f6cd27828f6eab4754b3579a",
+    "entities": [
+      {
+        "tableName": "BadestedEntity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `navn` TEXT NOT NULL, `sted` TEXT NOT NULL, `lat` REAL NOT NULL, `lon` REAL NOT NULL, `favoritt` INTEGER NOT NULL, `avstand` INTEGER, `badeforhold` TEXT, `observert` REAL, `solnedgang` TEXT, `soloppgang` TEXT, `sistOppdatert` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "navn",
+            "columnName": "navn",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sted",
+            "columnName": "sted",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lat",
+            "columnName": "lat",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lon",
+            "columnName": "lon",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "favoritt",
+            "columnName": "favoritt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "avstand",
+            "columnName": "avstand",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "badeforhold",
+            "columnName": "badeforhold",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "observert",
+            "columnName": "observert",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "solnedgang",
+            "columnName": "solnedgang",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "soloppgang",
+            "columnName": "soloppgang",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sistOppdatert",
+            "columnName": "sistOppdatert",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'e1bd3e51f6cd27828f6eab4754b3579a')"
+    ]
+  }
+}

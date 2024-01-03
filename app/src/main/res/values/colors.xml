@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    app farger-->
+    <color name="colorPrimary">#22AAAF</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="pink">#E76792</color>
+    <color name="gronn">#c7ebc0</color>
+    <color name="blaa">#aec9d6</color>
+    <color name="cardview_dark">#D8DBE2</color>
+    <color name="cardview_dark1">#FF3700B3</color>
+
+    <!--  bakgrunner  -->
+    <color name="backgroundLight">#FFFFFF</color>
+    <color name="backgroundDark">#F8F8F7</color>
+
+
+    <color name="bar">#9cc3c9</color>
+
+
+    <color name="coldBlue">#167EB9</color>
+
+</resources>

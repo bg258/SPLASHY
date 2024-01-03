@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.in2000_team33">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:icon="@drawable/splashy"
+        android:label="@string/splashy"
+        android:supportsRtl="true"
+        android:theme="@style/NormalTheme"
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true">
+
+        <activity
+            android:name=".ui.BadestedActivity"
+            android:theme="@style/NormalTheme" />
+        
+        <activity
+            android:name=".ui.TextSize"
+            android:parentActivityName=".ui.Settings"
+            />
+
+        <activity
+            android:name=".ui.About"
+            android:parentActivityName=".ui.Settings" />
+
+        <activity
+            android:name=".ui.Settings"
+            android:parentActivityName=".MainActivity"
+            android:launchMode="singleTask">
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:parentActivityName=".Launcher"
+            android:theme="@style/NormalTheme">
+        </activity>
+
+        <activity android:name=".Launcher"
+            tools:ignore="ExtraText"
+            android:theme="@style/Splashy">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

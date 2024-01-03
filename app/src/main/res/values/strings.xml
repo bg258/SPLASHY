@@ -1,0 +1,273 @@
+<resources>
+    <string name="app_name">IN2000_team33</string>
+    <string name="home">home_button</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_favoritter">MainActivity</string>
+    <string name="mine_badesteder">Mine badesteder</string>
+    <string name="task_description">Task Description</string>
+
+    <string name="button_tilbake">button_tilbake</string>
+    <string name="steds_navn">badested</string>
+    <string name="vann_icon">vannicon</string>
+    <string name="vear_icon">væricon</string>
+    <string name="varsel_vear">Værvarsel</string>
+    <string name="no_place">ingensteder</string>
+    <string name="button_back">gå tilbake</string>
+    <string name="badested">badested</string>
+    <string name="ingen_data">ingen data</string>
+    <string name="timesvarsel">Timesvarsel</string>
+    <!--    textViews-->
+    <string name="temp_C">%1$s °C</string>
+    <string name="temp_F">%1$s °F</string>
+    <string name="distanse_km">%1$s km</string>
+    <string name="distanse_m">%1$s m</string>
+    <string name="ikke_satt">ikke_satt</string>
+    <string name="tom">tom</string>
+    <string name="mer_info">MER INFO</string>
+    <string name="blanda_temp_C">L: %1$s °C  \nV: %2$s °C</string>
+    <string name="blanda_temp_F">L: %1$s °F  \nV: %2$s °F</string>
+
+
+    <string name="splashy">SPLASHY</string>
+    // SETTINGS - LAYOUT
+    <string name="settings">Settings</string>
+    <string name="settings_nor">Innstillinger</string>
+
+    <string name="welcome">Welcome to Splashy!</string>
+    <string name="welcome_nor">Velkommen til Splashy!</string>
+
+    <string name="night_mode">Night Mode</string>
+    <string name="night_mode_nor">Nattmodus</string>
+
+    <string name="cache">Clear cache</string>
+    <string name="cache_nor">Tøm minne</string>
+
+    <string name="temp">Cel(℃) - Far(℉)</string>
+
+    <string name="text_size">Text Size</string>
+    <string name="text_size_nor">Tekststørrelse</string>
+
+    <string name="language">NOR - ENG</string>
+
+    <string name="info">About us / FAQ</string>
+    <string name="info_nor">Om oss / FAQ</string>
+
+    <string name="not">Notifications</string>
+    <string name="not_nor">Varsler</string>
+
+    // ABOUT-SIDEN
+    <string name="introduction">Welcome to our Frequently Asked Questions (FAQs) page.</string>
+    <string name="introduction_nor">Velkommen til siden om ofte stilte spørsmål (FAQs).</string>
+
+    <string name="about_intro_name">About us</string>
+    <string name="about_intro_name_nor">Om oss</string>
+    <string name="about_intro">
+        We are a group of 6 students who are working together to create an android app for the software engineering subject.
+        application for android in the subject Software Engineering.
+        Everyone in the team is a computer science student at University of Oslo.
+    </string>
+
+    <string name="about_intro_nor">
+        Vi er en gruppe på 6 personer som er satt sammen i prosjektarbeid  for å lage en
+        applikasjon til android i faget "Software Engineering".
+        Alle i teamet er studenter ved Universitetet i Oslo og studerer informatikk.
+    </string>
+
+
+    // STUDENTS
+    <string name="morten">Morten Storvik</string>
+    <string name="morten_eng">
+        I´m Morten Storvik and I am in my second year of studies towards a bachelor´s
+        in Composite Computer Sciences. In my spare time I love to play video games and
+        listen to music
+    </string>
+
+    <string name="morten_nor">
+        Jeg er Morten Storvik og går en samensatt bachelor i informatikk.
+        Jeg liker å game og høre på musikk i fritiden min.
+    </string>
+
+    <string name="charlotte">Charlotte Mitush</string>
+    <string name="charlotte_eng">
+        I´m Charlotte Mitusch and I am taking a bachelors degree in computer science,
+        simultaneously as I take my master´s at NHH. I love to fill my life with great
+        adventures and friends, play tennis and other sports.
+    </string>
+    <string name="charlotte_nor">
+        Jeg heter Charlotte Marie Mitusch, og jeg tar en bachelorgrad i informatikk,
+        samtidig som jeg tar min mastergrad ved NHH. Jeg elsker å fylle livet mitt med
+        store opplevelser og venner, spille tennis og andre idretter.
+    </string>
+
+    <string name="inge">Inge Surland</string>
+    <string name="inge_eng">
+        I am taking a bachelor´s degree in programming and system architecture.
+        I spend my spare time gaming and programming.
+    </string>´
+    <string name="inge_nor">
+        Jeg er Inge Alexander og studerer programmering og systemarkitektur.
+        I fritiden bruker jeg tiden min på gaming og programmering.
+    </string>
+
+    <string name="pre">Preben Zahl</string>
+    <string name="pre_eng">
+        Preben Zahl is a bath-loving being who thinks there is too little focus on swimming in society.
+        He thinks there should be more technical aids that can facilitate daily bathing.
+    </string>
+    <string name="pre_nor">
+        Preben Zahl er et badeelskende vesen som synes det er for lite fokus på bading i samfunnet.
+        Han synes det burde være flere tekniske hjelpemidler som kan tilrettelegge for daglig bading.
+    </string>
+
+    <string name="mark">Mark Tzvetoslavov</string>
+    <string name="mark_eng">
+        I´m Mark Tzvetoslavov and I am taking a bachelor´s degree in language technology. I love
+        programming and live by the motto: WORK HARD SO YOU CAN SHOP HARDER.
+    </string>
+    <string name="mark_nor">
+        Jeg er Mark Tzvetoslavov og tar en bachelorgrad i språkteknologi. Jeg elsker
+        programmering og lever etter mottoet: ARBEID HARDT SÅ DU KAN HANDLE HARDERE.
+    </string>
+
+    <string name="inger">Inger Kavliem</string>
+    <string name="inger_eng">
+        I am taking a bachelor´s degree in programming and systems architecture. I love to
+        exercise, nature, good coffee and good conversations with good people.
+    </string>
+    <string name="inger_nor">
+        Jeg går bachelor i programmering og systemarkitektur.
+        Fritiden liker jeg å fylle med trening, natur, god kaffe og
+        gode samtaler med gode mennesker.
+    </string>
+
+    <string name="faq">Frequently asked questions (FAQs)</string>
+    <string name="faq_info">If you don´t actually see your question or answer here, take a moment
+    and drop an email to us to make sure we can answer any future questions for other users. </string>
+    <string name="faq_nor">Ofte stilte spørsmål</string>
+    <string name="faq_info_nor">Hvis du ikke ser spørsmålet ditt eller svaret her, kan du ta et
+        øyeblikk og sende en e-post til oss for å sikre at vi kan svare på fremtidige spørsmål
+        til andre brukere.</string>
+
+    <string name="question_nor">
+        Hvem kan bruke appen?
+    </string>
+    <string name="question_eng">
+        Who can use the app?
+    </string>
+    <string name="answer_nor">
+        Appen kan brukes av alle. Vi har prøvd vår beste for å inkludere alle. Dette gjelder barn,
+        unge, voksne og eldre.
+    </string>
+    <string name="answer_eng">
+        The app can be used by anyone. We have tried our best to include everyone. This applies to
+        children, young people, adults and the elderly.
+    </string>
+
+    <string name="question_nor_1">
+        Hva brukes nattmodus for?
+    </string>
+    <string name="question_eng_1">
+        What is night mode used for?
+    </string>
+    <string name="answer_nor_1">
+        Nattmodus er en funksjon som bytter skjerm-fargen til et mørkt-farge. Denne funksjonen kan brukes
+        dersom du har syn-problemer, slitter litt med lyse farger eller bare liker mørkt-modus.
+    </string>
+    <string name="answer_eng_1">
+        Night mode is a function that changes the screen color to a dark color. This feature can be used
+        if you have vision problems, have some kind of problem with light colors or just like dark mode.
+    </string>
+
+    <string name="question_nor_2">
+        Hvordan kan jeg bytte språk?
+    </string>
+    <string name="question_eng_2">
+        How can I change the language?
+    </string>
+    <string name="answer_nor_2">
+        For øyeblikket, er det bare mulig å bruke språk funksjonen i settings-aktiviteten. Det vil si at du
+        ikke vil kunne se tekst på engelsk på andre deler i appen enn settings. Vi jobber stadig med å kunne tilby appen
+        i forskjellige språk og for at disse skal kunne vises på hele appen.
+
+    </string>
+    <string name="answer_eng_2">
+        At the moment, it is only possible to use the language function in the settings activity. You
+        will not be able to see text in English on other parts of the app other than settings. We are
+        currently working to be able to offer the app in different languages and for these to be displayed on the entire app.
+    </string>
+
+    <string name="question_nor_3">
+        Hvordan kan jeg gjøre teksten større?
+    </string>
+    <string name="question_eng_3">
+        How can I make the text bigger?
+    </string>
+    <string name="answer_nor_3">
+        Det finnes en egen "TAB" som lar deg forandre størrelsen på teksten i settings. Dette gjelder også for settings.
+        Vi jobber stadig for å kunne tilby denne funksjonen for hele appen.
+
+    </string>
+    <string name="answer_eng_3">
+        There is a separate "TAB" that allows you to change the size of the text in settings. This also applies to settings.
+        We are constantly working to be able to offer this feature for the entire app.
+    </string>
+
+    <string name="question_nor_4">
+        TIPS eller FORBEDRINGER?
+    </string>
+    <string name="question_eng_4">
+        TIPS or IMPROVEMENTS?
+    </string>
+    <string name="answer_nor_4">
+        Hvis du lurer på noe eller tenker noe kan gjøres bedre, kan du ta kontakt til følgende mail:
+        splashydevelopment@gmail.com
+    </string>
+    <string name="answer_eng_4">
+        If you have any questions or think something can be done better, you can contact the following email:
+        splashydevelopment@gmail.com
+    </string>
+
+
+    // TEXT SIZE
+    <string name="text_size_title">Use</string>
+    <string name="text_size_title_nor">Bruk</string>
+    <string name="text_size_info"> We, at Splashy, would like for everybody to be able to use this app.
+        If you have any type of vision problems or just want to make the text bigger, you have
+        the opportunity to do so with the buttons you can observe below. When you press one of
+        the buttons, you will  get an insight into how big the text gets regarding the different
+        segments of the app. </string>
+
+    <string name="text_size_info_nor"> Vi, utviklerne av Splashy, er opptatt av at alle skal kunne bruke appen. Hvis du har
+    synsproblemer eller bare ønsker å forstørre teksten har du muligheten til å gjøre det med
+    knappene du ser under. Når du trykker på knappene, vil du få et innblikk på hvor stor
+    tekst størrelsen til de ulike delene i appen blir.</string>
+
+    <string name="increase">INCREASE</string>
+    <string name="increase_nor">ØKE</string>
+    <string name="reset">RESET</string>
+    <string name="reset_nor">NULLSTILL</string>
+    <string name="temperature">%1$s °C</string>
+    <string name="temp_far">%1$s °F</string>
+    <string name="distance_km">%1$s km</string>
+    <string name="distance_m">%1$s m</string>
+    <string name="s_k">Søk</string>
+    <string name="vindhastighet">%1$s m/s</string>
+    <string name="favoritter">Favoritter</string>
+    <string name="instillinger">Instillinger</string>
+    <string name="solnedgang">Solnedgang</string>
+    <string name="soloppgang">Soloppgang</string>
+    <string name="vindstyrke">Vindstyrke</string>
+    <string name="observert">Målt vanntemperatur</string>
+
+    // ContentDescription
+    <string name="weathericon">Shows a weathericon that is corresponding to the weather description</string>
+    <string name="locationsymbol">Shows a locationsymbol standing next to the distance to that location</string>
+    <string name="sunSymbol">Shows a drawing of sunrise or sunset, next to when</string>
+    <string name="ocean">Shows a oceansymbol, next to ocean-temperature</string>
+    <string name="gpsSymbol">Relocating the map to the location of the user</string>
+
+    <string name="tipsNyttBadested">Tips: Legg til et nytt badested ved å holde en finger på et sted i kartet!</string>
+</resources>

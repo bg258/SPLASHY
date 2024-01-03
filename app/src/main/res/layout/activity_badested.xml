@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.BadestedActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#FFFFFF">
+
+        <ImageButton
+            android:id="@+id/tilbake_knapp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="@string/button_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/back" />
+
+        <ToggleButton
+            android:id="@+id/toggleFavoritt"
+            android:layout_width="30dp"
+            android:layout_height="31dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/favoritt_toggle"
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintBottom_toBottomOf="@+id/tilbake_knapp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.538"
+            app:layout_constraintTop_toTopOf="@+id/tilbake_knapp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/infoside"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="50dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/badested_navn"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/badested"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/distanse" />
+
+            <ImageView
+                android:id="@+id/bade_icon"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="40dp"
+                android:contentDescription="@string/ocean"
+                app:layout_constraintBottom_toBottomOf="@+id/vear_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/vear_icon"
+                app:layout_constraintTop_toTopOf="@+id/vear_icon"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/ic_badevann" />
+
+            <TextView
+                android:id="@+id/vear_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="87dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="@string/ingen_data"
+                android:textSize="40sp"
+                app:layout_constraintEnd_toEndOf="@+id/vear_icon"
+                app:layout_constraintStart_toStartOf="@+id/vear_icon"
+                app:layout_constraintTop_toBottomOf="@+id/vear_icon"
+                tools:text="18&#176;C" />
+
+            <TextView
+                android:id="@+id/bade_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="87dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/ingen_data"
+                android:textSize="40sp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/bade_icon"
+                app:layout_constraintStart_toStartOf="@+id/bade_icon"
+                app:layout_constraintTop_toBottomOf="@+id/bade_icon"
+                tools:text="18&#176;C" />
+
+            <ImageView
+                android:id="@+id/vear_icon"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="15dp"
+                android:contentDescription="@string/weathericon"
+                app:layout_constraintEnd_toStartOf="@+id/bade_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/badested_navn"
+                app:srcCompat="@drawable/clearsky_day" />
+
+
+
+            <TextView
+                android:id="@+id/text_time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/ikke_satt"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/text_time1"
+                app:layout_constraintEnd_toStartOf="@id/text_time3"
+                app:layout_constraintTop_toBottomOf="@+id/timeForecast" />
+
+            <TextView
+                android:id="@+id/text_temp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="41dp"
+                android:text="@string/ikke_satt"
+                android:textColor="@color/black"
+                app:layout_constraintHorizontal_bias="0.714"
+                app:layout_constraintStart_toStartOf="@id/text_time1"
+                app:layout_constraintTop_toBottomOf="@+id/icon1" />
+
+            <TextView
+                android:id="@+id/text_time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/ikke_satt"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/timeForecast" />
+
+            <TextView
+                android:id="@+id/text_temp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="33dp"
+                android:text="@string/ikke_satt"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/icon2"
+                app:layout_constraintTop_toBottomOf="@+id/icon2" />
+
+            <TextView
+                android:id="@+id/text_temp3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="@string/ikke_satt"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/icon3"
+                app:layout_constraintTop_toBottomOf="@+id/icon3" />
+
+            <TextView
+                android:id="@+id/text_time3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                app:layout_constraintEnd_toStartOf="@id/text_time4"
+                android:text="@string/ikke_satt"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@id/text_time2"
+                app:layout_constraintTop_toBottomOf="@+id/timeForecast" />
+
+            <TextView
+                android:id="@+id/text_time4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="31dp"
+                android:textColor="@color/black"
+                android:text="@string/ikke_satt"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/timeForecast" />
+
+            <TextView
+                android:id="@+id/text_temp4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/ikke_satt"
+                app:layout_constraintStart_toStartOf="@id/icon4"
+                app:layout_constraintTop_toBottomOf="@+id/icon4" />
+
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="57dp"
+                android:layout_height="61dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="31dp"
+                android:contentDescription="@string/weathericon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_time4"
+                app:srcCompat="@drawable/clearsky_day" />
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="57dp"
+                android:layout_height="61dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="31dp"
+                android:contentDescription="@string/weathericon"
+                app:layout_constraintStart_toStartOf="@id/text_time2"
+                app:layout_constraintTop_toBottomOf="@+id/text_time2"
+                app:srcCompat="@drawable/clearsky_day" />
+
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="57dp"
+                android:layout_height="61dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/weathericon"
+                app:layout_constraintTop_toBottomOf="@+id/text_time3"
+                app:layout_constraintStart_toStartOf="@id/text_time3"
+                app:srcCompat="@drawable/clearsky_day" />
+
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="57dp"
+                android:layout_height="61dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="34dp"
+                android:contentDescription="@string/weathericon"
+                app:layout_constraintLeft_toLeftOf="@id/text_time1"
+                app:layout_constraintTop_toBottomOf="@+id/text_time1"
+                app:srcCompat="@drawable/clearsky_day" />
+
+            <TextView
+                android:id="@+id/distanse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/location"
+                app:layout_constraintStart_toEndOf="@+id/location"
+                app:layout_constraintTop_toTopOf="@+id/location"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/location"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/locationsymbol"
+                android:paddingBottom="3dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_loaction_icon" />
+
+            <TextView
+                android:id="@+id/text_soloppgang"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="44dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/black"
+                android:text="@string/soloppgang"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_temp2" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/vindstyrke"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vear_temp" />
+
+
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/observert"
+                android:textSize="20sp"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/timeForecast"
+                android:layout_width="210dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="40dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/timesvarsel"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview3" />
+
+            <TextView
+                android:id="@+id/text_solnedgang"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginEnd="90dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/solnedgang"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/text_soloppgang"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/text_soloppgang" />
+
+            <ImageView
+                android:id="@+id/image_soloppgang"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="21dp"
+                android:contentDescription="@string/sunSymbol"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_soloppgang"
+                app:srcCompat="@drawable/noun_sunrise_1057065" />
+
+            <ImageView
+                android:id="@+id/image_solnedgang"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="132dp"
+                android:contentDescription="@string/sunSymbol"
+                android:fontFamily="@font/montserrat_regular"
+                app:layout_constraintBottom_toBottomOf="@+id/image_soloppgang"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/image_soloppgang"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/noun_sunset_1057063" />
+
+            <TextView
+                android:id="@+id/vindstyrke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="48dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView2"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/observert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="48dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="25sp"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/textview3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textview3"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/kl_solopp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="31dp"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="@+id/image_soloppgang"
+                app:layout_constraintStart_toEndOf="@+id/image_soloppgang"
+                app:layout_constraintTop_toTopOf="@+id/image_soloppgang"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/kl_solned"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="81dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/image_solnedgang"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/image_solnedgang"
+                app:layout_constraintTop_toTopOf="@+id/image_solnedgang" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

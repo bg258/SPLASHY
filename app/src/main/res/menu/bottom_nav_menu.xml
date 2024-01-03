@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="Hjem"
+        />
+    <item
+        android:id="@+id/sok"
+        android:enabled="true"
+        android:icon="@drawable/ic_search_symbol"
+        android:title="@string/s_k" />
+
+    <item
+        android:id="@+id/bookmark"
+        android:enabled="true"
+        android:icon="@drawable/heart"
+        android:title="@string/favoritter"
+        />
+
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settings_icon"
+        android:title="@string/instillinger" />
+</menu>

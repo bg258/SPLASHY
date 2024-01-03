@@ -1,0 +1,166 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 3,
+    "identityHash": "63087dacfd95174b563253bb9652f21b",
+    "entities": [
+      {
+        "tableName": "BadestedEntity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `navn` TEXT NOT NULL, `sted` TEXT NOT NULL, `lat` REAL NOT NULL, `lon` REAL NOT NULL, `favoritt` INTEGER NOT NULL, `avstand` INTEGER, `havTemperatur` REAL, `luftTemperatur` REAL, `weather` TEXT, `wind` TEXT, `temp_ocean_6_hours` REAL, `temp_air_6hours` REAL, `weather_6hours` TEXT, `wind_6hours` TEXT, `temp_ocean_12_hours` REAL, `temp_air_12hours` REAL, `weather_12hours` TEXT, `wind_12hours` TEXT, `observert` REAL, `solnedgang` TEXT, `soloppgang` TEXT, `sistOppdatert` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "navn",
+            "columnName": "navn",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sted",
+            "columnName": "sted",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lat",
+            "columnName": "lat",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lon",
+            "columnName": "lon",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "favoritt",
+            "columnName": "favoritt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "avstand",
+            "columnName": "avstand",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "badeforhold.havTemperatur",
+            "columnName": "havTemperatur",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "badeforhold.luftTemperatur",
+            "columnName": "luftTemperatur",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "badeforhold.weather",
+            "columnName": "weather",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "badeforhold.wind",
+            "columnName": "wind",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "badeforhold.temp_ocean_6_hours",
+            "columnName": "temp_ocean_6_hours",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "badeforhold.temp_air_6hours",
+            "columnName": "temp_air_6hours",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "badeforhold.weather_6hours",
+            "columnName": "weather_6hours",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "badeforhold.wind_6hours",
+            "columnName": "wind_6hours",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "badeforhold.temp_ocean_12_hours",
+            "columnName": "temp_ocean_12_hours",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "badeforhold.temp_air_12hours",
+            "columnName": "temp_air_12hours",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "badeforhold.weather_12hours",
+            "columnName": "weather_12hours",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "badeforhold.wind_12hours",
+            "columnName": "wind_12hours",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "badeforhold.observert",
+            "columnName": "observert",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "badeforhold.solnedgang",
+            "columnName": "solnedgang",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "badeforhold.soloppgang",
+            "columnName": "soloppgang",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "badeforhold.sistOppdatert",
+            "columnName": "sistOppdatert",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '63087dacfd95174b563253bb9652f21b')"
+    ]
+  }
+}

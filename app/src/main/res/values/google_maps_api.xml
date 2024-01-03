@@ -1,0 +1,11 @@
+<resources>
+    <!--Google maps api nøkkel.
+    Det er ikke anbefalt å laste opp API-nøkkler i git,
+    men siden vi bruker et privat repo gjøres dette for enkelthetsskyld.
+
+    Dersom appen skal legges ut bør det også lages en egen api-nøkkel for release versjonen.
+
+    Se følgende for mer informasjon:
+    https://developers.google.com/maps/documentation/android-sdk/get-api-key#add_key-->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyB_40KP6BMoARkkwMUh6PmJZ-OzWxmXe0s</string>
+</resources>
